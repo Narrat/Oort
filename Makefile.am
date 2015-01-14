@@ -1,4 +1,4 @@
-NULL = 
+NULL =
 
 AUTOMAKE_OPTIONS = foreign
 
@@ -55,11 +55,11 @@ RENDERER_SRCS = \
 	renderer/batches/debug_lines.cc \
 	$(NULL)
 
-TEST_SRCS := $(wildcard $(top_srcdir)/test/*.cc)
-TESTS := $(patsubst $(top_srcdir)/test/%.cc,$(top_builddir)/test/%.so,$(TEST_SRCS))
+TEST_SRCS := $(wildcard test/*.cc)
+TESTS := $(patsubst test/%.cc,test/%.so,$(TEST_SRCS))
 
-TEST_SCENARIO_SRCS = $(wildcard $(top_srcdir)/test/*.scn)
-TEST_SCENARIOS = $(patsubst $(top_srcdir)/test/%.scn,$(top_builddir)/test/%.json,$(TEST_SCENARIO_SRCS))
+TEST_SCENARIO_SRCS = $(wildcard test/*.scn)
+TEST_SCENARIOS = $(patsubst test/%.scn,test/%.json,$(TEST_SCENARIO_SRCS))
 
 SCENARIO_SRCS = $(wildcard $(top_srcdir)/scenarios/*.scn)
 SCENARIOS = $(patsubst $(top_srcdir)/scenarios/%.scn,$(top_builddir)/scenarios/%.json,$(SCENARIO_SRCS))

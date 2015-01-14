@@ -20,6 +20,11 @@ Compilation
 
 Oort uses the standard autotools build system. It is known to compile on Linux.
 
+### Depends
+ * automake 1.14
+ * boost
+ * box2d
+
 Gameplay
 --------
 

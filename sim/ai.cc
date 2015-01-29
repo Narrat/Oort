@@ -233,7 +233,7 @@ void LuaAI::tick() {
 
   lua_pushnumber(G, ship.game->time);
   lua_setglobal(G, "_time");
-  auto result = lua_resume(L, 0);
+  auto result = lua_resume(L, NULL, 0);
   if (result == 0) {
     throw std::runtime_error("AI exited");
   } else if (result == LUA_YIELD) {

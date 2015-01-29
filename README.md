@@ -8,9 +8,8 @@ Oort is a programming game currently in development. Two or more space fleets,
 each ship individually controlled by the player's Lua code, battle in
 2-dimensional space with Newtonian physics.
 
-- [Chrome app](https://chrome.google.com/webstore/detail/mkmnfnhnocdpekfinglecpbningfodof)
 - [Code](https://github.com/rlane/Oort)
-- [Forum](http://oort.lefora.com)
+- [Forum](http://oort.lefora.com) (dead)
 - [Bug tracker](https://github.com/rlane/Oort/issues)
 - [Reference AI](https://github.com/rlane/Oort/blob/master/ais/reference-classic.lua)
 - IRC: #oort on irc.freenode.net
@@ -22,8 +21,10 @@ Oort uses the standard autotools build system. It is known to compile on Linux.
 
 ### Depends
  * automake 1.14/1.15
- * boost
- * box2d
+ * boost/boost-libs
+ * box2d 2.3.x
+ * lua 5.2
+ * sdl
 
 Gameplay
 --------

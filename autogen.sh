@@ -40,15 +40,19 @@ fi
 	DIE=1
 }
 
-if automake-1.14 --version < /dev/null > /dev/null 2>&1 ; then
+if automake-1.15 --version < /dev/null > /dev/null 2>&1 ; then
+	AUTOMAKE=automake-1.15
+	ACLOCAL=aclocal-1.15
+else if automake-1.14 --version < /dev/null > /dev/null 2>&1 ; then
 	AUTOMAKE=automake-1.14
 	ACLOCAL=aclocal-1.14
 else
 	echo
-	echo "You must have automake 1.14.x installed to compile $PROJECT."
+	echo "You must have automake 1.14.x or 1.15.x installed to compile $PROJECT."
 	echo "Install the appropriate package for your distribution,"
 	echo "or get the source tarball at http://ftp.gnu.org/gnu/automake/"
 	DIE=1
+fi
 fi
 
 if test "$DIE" -eq 1; then

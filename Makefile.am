@@ -56,10 +56,10 @@ RENDERER_SRCS = \
 	$(NULL)
 
 TEST_SRCS := $(wildcard test/*.cc)
-TESTS := $(patsubst test/%.cc,test/%.so,$(TEST_SRCS))
+#TESTS := $(patsubst test/%.cc,test/%.so,$(TEST_SRCS))
 
 TEST_SCENARIO_SRCS = $(wildcard test/*.scn)
-TEST_SCENARIOS = $(patsubst test/%.scn,test/%.json,$(TEST_SCENARIO_SRCS))
+#TEST_SCENARIOS = $(patsubst test/%.scn,test/%.json,$(TEST_SCENARIO_SRCS))
 
 SCENARIO_SRCS = $(wildcard $(top_srcdir)/scenarios/*.scn)
 SCENARIOS = $(patsubst $(top_srcdir)/scenarios/%.scn,$(top_builddir)/scenarios/%.json,$(SCENARIO_SRCS))

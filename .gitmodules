@@ -3,7 +3,7 @@
 	url = git://gitorious.org/json-spirit/json-spirit.git
 [submodule "third_party/glm"]
 	path = third_party/glm
-	url = git://ogl-math.git.sourceforge.net/gitroot/ogl-math/ogl-math
+	url = git://github.com/g-truc/glm.git
 [submodule "third_party/insrc"]
 	path = third_party/insrc
 	url = git://github.com/rlane/insrc.git
